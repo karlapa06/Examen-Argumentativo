@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct ContentView: View {
-    @State var covid = [CovidBase]()
+    @State var covid = [Covid]()
 
     var body: some View {
         VStack {
