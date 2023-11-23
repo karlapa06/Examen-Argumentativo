@@ -14,6 +14,10 @@
 		88C97B372B0FC35C00078FAB /* CovidExamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B362B0FC35C00078FAB /* CovidExamenTests.swift */; };
 		88C97B412B0FC35C00078FAB /* CovidExamenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B402B0FC35C00078FAB /* CovidExamenUITests.swift */; };
 		88C97B432B0FC35C00078FAB /* CovidExamenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B422B0FC35C00078FAB /* CovidExamenUITestsLaunchTests.swift */; };
+		88C97B5C2B0FC79800078FAB /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B5B2B0FC79800078FAB /* NetworkAPIProtocol.swift */; };
+		88C97B5F2B0FC82500078FAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88C97B5E2B0FC82500078FAB /* Alamofire */; };
+		88C97B622B0FC84200078FAB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88C97B612B0FC84200078FAB /* SDWebImageSwiftUI */; };
+		88C97B642B0FC8CB00078FAB /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B632B0FC8CB00078FAB /* Covid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		88C97B3C2B0FC35C00078FAB /* CovidExamenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidExamenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C97B402B0FC35C00078FAB /* CovidExamenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidExamenUITests.swift; sourceTree = "<group>"; };
 		88C97B422B0FC35C00078FAB /* CovidExamenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidExamenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88C97B5B2B0FC79800078FAB /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
+		88C97B632B0FC8CB00078FAB /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C97B622B0FC84200078FAB /* SDWebImageSwiftUI in Frameworks */,
+				88C97B5F2B0FC82500078FAB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,9 @@
 		88C97B242B0FC35B00078FAB /* CovidExamen */ = {
 			isa = PBXGroup;
 			children = (
+				88C97B572B0FC70100078FAB /* Frameworks */,
+				88C97B532B0FC6BB00078FAB /* Data */,
+				88C97B522B0FC6AF00078FAB /* Domain */,
 				88C97B252B0FC35B00078FAB /* CovidExamenApp.swift */,
 				88C97B272B0FC35B00078FAB /* ContentView.swift */,
 				88C97B292B0FC35C00078FAB /* Assets.xcassets */,
@@ -127,6 +138,61 @@
 			path = CovidExamenUITests;
 			sourceTree = "<group>";
 		};
+		88C97B522B0FC6AF00078FAB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		88C97B532B0FC6BB00078FAB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				88C97B542B0FC6CC00078FAB /* Modelos */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		88C97B542B0FC6CC00078FAB /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				88C97B562B0FC6EF00078FAB /* Network */,
+				88C97B632B0FC8CB00078FAB /* Covid.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		88C97B562B0FC6EF00078FAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				88C97B5B2B0FC79800078FAB /* NetworkAPIProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		88C97B572B0FC70100078FAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C97B5A2B0FC72700078FAB /* ViewModels */,
+				88C97B582B0FC70800078FAB /* Views */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		88C97B582B0FC70800078FAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88C97B5A2B0FC72700078FAB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +209,10 @@
 			dependencies = (
 			);
 			name = CovidExamen;
+			packageProductDependencies = (
+				88C97B5E2B0FC82500078FAB /* Alamofire */,
+				88C97B612B0FC84200078FAB /* SDWebImageSwiftUI */,
+			);
 			productName = CovidExamen;
 			productReference = 88C97B222B0FC35B00078FAB /* CovidExamen.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +285,10 @@
 				Base,
 			);
 			mainGroup = 88C97B192B0FC35B00078FAB;
+			packageReferences = (
+				88C97B5D2B0FC82500078FAB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				88C97B602B0FC84200078FAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 88C97B232B0FC35B00078FAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C97B5C2B0FC79800078FAB /* NetworkAPIProtocol.swift in Sources */,
 				88C97B282B0FC35B00078FAB /* ContentView.swift in Sources */,
 				88C97B262B0FC35B00078FAB /* CovidExamenApp.swift in Sources */,
+				88C97B642B0FC8CB00078FAB /* Covid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +664,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88C97B5D2B0FC82500078FAB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		88C97B602B0FC84200078FAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88C97B5E2B0FC82500078FAB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88C97B5D2B0FC82500078FAB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		88C97B612B0FC84200078FAB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88C97B602B0FC84200078FAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88C97B1A2B0FC35B00078FAB /* Project object */;
 }
