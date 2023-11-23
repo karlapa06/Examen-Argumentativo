@@ -7,4 +7,14 @@
 
 import Foundation
 
+struct Covid{
+    var country : String
+    var region : String
+    var results : [Cases]
+}
 
+struct Cases {
+    var Date: Int
+    var total: Int
+    var new: Int
+}

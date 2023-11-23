@@ -18,6 +18,12 @@
 		88C97B5F2B0FC82500078FAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88C97B5E2B0FC82500078FAB /* Alamofire */; };
 		88C97B622B0FC84200078FAB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88C97B612B0FC84200078FAB /* SDWebImageSwiftUI */; };
 		88C97B642B0FC8CB00078FAB /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B632B0FC8CB00078FAB /* Covid.swift */; };
+		88C97B662B0FCC3100078FAB /* CovidListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B652B0FCC3100078FAB /* CovidListRequirement.swift */; };
+		88C97B682B0FCC8100078FAB /* CovidRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B672B0FCC8100078FAB /* CovidRepository.swift */; };
+		88C97B6A2B0FCCBC00078FAB /* CovidAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B692B0FCCBC00078FAB /* CovidAPIService.swift */; };
+		88C97B6C2B0FCD2800078FAB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B6B2B0FCD2800078FAB /* ContentViewModel.swift */; };
+		88C97B6E2B0FCFD400078FAB /* CovidAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B6D2B0FCFD400078FAB /* CovidAPIProtocol.swift */; };
+		88C97B702B0FD46100078FAB /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C97B6F2B0FD46100078FAB /* NetworkAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		88C97B422B0FC35C00078FAB /* CovidExamenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidExamenUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88C97B5B2B0FC79800078FAB /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
 		88C97B632B0FC8CB00078FAB /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		88C97B652B0FCC3100078FAB /* CovidListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidListRequirement.swift; sourceTree = "<group>"; };
+		88C97B672B0FCC8100078FAB /* CovidRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidRepository.swift; sourceTree = "<group>"; };
+		88C97B692B0FCCBC00078FAB /* CovidAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPIService.swift; sourceTree = "<group>"; };
+		88C97B6B2B0FCD2800078FAB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		88C97B6D2B0FCFD400078FAB /* CovidAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPIProtocol.swift; sourceTree = "<group>"; };
+		88C97B6F2B0FD46100078FAB /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,7 @@
 		88C97B522B0FC6AF00078FAB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				88C97B652B0FCC3100078FAB /* CovidListRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -156,8 +169,8 @@
 		88C97B542B0FC6CC00078FAB /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				88C97B562B0FC6EF00078FAB /* Network */,
 				88C97B632B0FC8CB00078FAB /* Covid.swift */,
+				88C97B562B0FC6EF00078FAB /* Network */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -166,6 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				88C97B5B2B0FC79800078FAB /* NetworkAPIProtocol.swift */,
+				88C97B672B0FCC8100078FAB /* CovidRepository.swift */,
+				88C97B692B0FCCBC00078FAB /* CovidAPIService.swift */,
+				88C97B6D2B0FCFD400078FAB /* CovidAPIProtocol.swift */,
+				88C97B6F2B0FD46100078FAB /* NetworkAPIService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 		88C97B5A2B0FC72700078FAB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				88C97B6B2B0FCD2800078FAB /* ContentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -331,10 +349,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C97B6C2B0FCD2800078FAB /* ContentViewModel.swift in Sources */,
+				88C97B702B0FD46100078FAB /* NetworkAPIService.swift in Sources */,
+				88C97B6E2B0FCFD400078FAB /* CovidAPIProtocol.swift in Sources */,
 				88C97B5C2B0FC79800078FAB /* NetworkAPIProtocol.swift in Sources */,
 				88C97B282B0FC35B00078FAB /* ContentView.swift in Sources */,
+				88C97B662B0FCC3100078FAB /* CovidListRequirement.swift in Sources */,
+				88C97B6A2B0FCCBC00078FAB /* CovidAPIService.swift in Sources */,
 				88C97B262B0FC35B00078FAB /* CovidExamenApp.swift in Sources */,
 				88C97B642B0FC8CB00078FAB /* Covid.swift in Sources */,
+				88C97B682B0FCC8100078FAB /* CovidRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

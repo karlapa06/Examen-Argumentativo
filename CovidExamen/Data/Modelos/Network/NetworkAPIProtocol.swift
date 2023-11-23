@@ -7,6 +7,9 @@
 
 import Foundation
 
-protocol NetworkAPIProtocol{
-    
-}
+//protocol NetworkAPIProtocol{
+  //
+    //protocol CovidAPIProtocol {
+      //  func getCovidList(limit: Int) async -> Covid
+    //}
+//}
